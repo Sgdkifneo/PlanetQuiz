@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/QuizTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quiz_title" />
+
+        <LinearLayout
+            android:id="@+id/question_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_q1"
+                style="@style/QuizButton"
+                android:text="What is the largest planet?" />
+
+            <Button
+                android:id="@+id/btn_q2"
+                style="@style/QuizButton"
+                android:text="Which planet has the most moons?" />
+
+            <Button
+                android:id="@+id/btn_q3"
+                style="@style/QuizButton"
+                android:text="Which planet spins on its side?" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/planet_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/answer_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/QuizButton"
+            android:text="Back to questions"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>
